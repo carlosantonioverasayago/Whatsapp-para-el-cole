@@ -9,7 +9,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 const AVATARES = ["🐶", "🐱", "🦊", "🦁", "🤖", "🦄", "🚀", "😎"];
 
 export default function WhatsAppPro() {
-  const [messages, setMessages] = useState<any[]>([]);
+ const [messages, setMessages] = useState<any[]>([]);
   const [text, setText] = useState("");
   const [user, setUser] = useState({ name: "", avatar: "" });
   const [isRegistered, setIsRegistered] = useState(false);
