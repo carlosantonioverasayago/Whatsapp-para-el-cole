@@ -14,7 +14,7 @@ const [messages, setMessages] = useState<any[]>([]);
   const [user, setUser] = useState({ name: "", avatar: "" });
   const [isRegistered, setIsRegistered] = useState(false);
   const [selectedChat, setSelectedChat] = useState("Global");
-  const [activeUsers, setActiveUsers] = useState(new Set());
+  const [activeUsers, setActiveUsers] = useState<Set<any>>(new Set());
   const scrollRef = useRef(null);
 
   useEffect(() => {
